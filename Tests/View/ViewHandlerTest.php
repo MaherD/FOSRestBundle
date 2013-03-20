@@ -40,7 +40,7 @@ class ViewHandlerTest extends \PHPUnit_Framework_TestCase
     public static function supportsFormatDataProvider()
     {
         return array(
-            'not supported'   => array(false, array('json' => false), 'xml'),
+            'json supported'   => array(false, array('json' => true), 'xml'),
             'html default'   => array(true, array('html' => true), 'xml'),
             'html custom'   => array(true, array('json' => false), 'html'),
             'html both'   => array(true, array('html' => true), 'html'),
